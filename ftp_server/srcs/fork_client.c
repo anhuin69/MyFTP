@@ -69,7 +69,7 @@ void		init_client(struct_client *clt, int sock)
       clt->error = ERR_TIMEOUT;
     }
   init_root_path(clt);
-  swrite(clt, "220 Bienvenue a toi jeune prepuce.\n");
+  swrite(clt, "220 Hello.\n");
   printf("New client connected.\n");
 }
 
